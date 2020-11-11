@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/user_major"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="학과: 정보통신공학과"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="이름: 홍길동"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/user_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Point: 10000KPI"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/kyungnam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="경남대학교"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="모바일식권"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="5"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"
+                android:text="학 식\n구 매"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary" />
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:text="구 매\n내 역"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/member"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="25dp"
+                android:text="커 뮤\n니 티"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary" />
+
+            <Button
+                android:id="@+id/community"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:text="회 원\n정 보"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_primary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "492824742471",
+    "firebase_url": "https://birdhit.firebaseio.com",
+    "project_id": "birdhit",
+    "storage_bucket": "birdhit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492824742471:android:5f5ff97f9739d96ffcff62",
+        "android_client_info": {
+          "package_name": "com.example.birdhit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492824742471-a7153hpgenbll1sul37r6rrik1dvt8fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy1StElQiZFDGs7qH3SKij5NLTdEKahUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492824742471-a7153hpgenbll1sul37r6rrik1dvt8fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

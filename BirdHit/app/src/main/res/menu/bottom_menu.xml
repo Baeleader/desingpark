@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_foodmenu"
+        android:enabled="true"
+        android:icon="@drawable/birdhit_foodmenu"
+        android:title="학식메뉴"
+        />
+
+    <item
+        android:id="@+id/action_barcode"
+        android:enabled="true"
+        android:icon="@drawable/birdhit_barcode"
+        android:title="식권구매"/>
+
+    <item
+        android:id="@+id/action_user"
+        android:enabled="true"
+        android:icon="@drawable/birdhit_usericon"
+        android:title="구매내역"/>
+
+
+</menu>
