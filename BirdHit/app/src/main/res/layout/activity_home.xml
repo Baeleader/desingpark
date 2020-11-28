@@ -99,8 +99,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_weight="5"
+            android:layout_height="200dp"
             android:background="#ffffff"
             android:orientation="horizontal">
 
@@ -133,13 +132,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
             android:background="#ffffff"
             android:orientation="horizontal">
 
 
             <Button
-                android:id="@+id/member"
+                android:id="@+id/community"
                 android:layout_width="170dp"
                 android:layout_height="140dp"
                 android:layout_marginLeft="25dp"
@@ -150,7 +150,7 @@
                 android:background="@drawable/btn_primary" />
 
             <Button
-                android:id="@+id/community"
+                android:id="@+id/member"
                 android:layout_width="170dp"
                 android:layout_height="140dp"
                 android:layout_marginLeft="20dp"
@@ -161,6 +161,56 @@
                 android:background="@drawable/btn_primary" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite">
+
+            <Button
+                android:id="@+id/notice"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="공지사항"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/btn_primary"
+                android:textStyle="bold|italic"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="개발자정보"
+                android:visibility="invisible"
+                android:layout_weight="8"
+                android:background="#ffffff"/>
+
+            <Button
+                android:id="@+id/btn_point"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="KPI 구매"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/btn_primary"
+                android:textStyle="bold|italic"
+                />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

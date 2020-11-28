@@ -50,4 +50,13 @@ public class FastfoodActivity extends AppCompatActivity {
         westernfood.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         FastfoodActivity.this.startActivity(westernfood);
     }
+    private void MoveHome(){
+        Intent Home = new Intent(FastfoodActivity.this, HomeActivity.class);
+        Home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        FastfoodActivity.this.startActivity(Home);
+    }
+    @Override // 뒤로 버튼 클릭 시 Home화면으로 이동
+    public void onBackPressed() {
+        MoveHome();
+    }
 }

@@ -21,6 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         findViewById(R.id.payment).setOnClickListener(onClickListener);
         findViewById(R.id.member).setOnClickListener(onClickListener);
         findViewById(R.id.community).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_point).setOnClickListener(onClickListener);
 
 
     }
@@ -54,6 +55,9 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.community:
                     community();
                     break;
+                case R.id.btn_point:
+                    Movepoint();
+                    break;
             }
 
         }
@@ -73,5 +77,9 @@ public class HomeActivity extends AppCompatActivity {
     private void community(){
         Intent community = new Intent(HomeActivity.this, CommunityActivity.class);
         HomeActivity.this.startActivity(community);
+    }
+    private void Movepoint(){
+        Intent Movepoint = new Intent(HomeActivity.this, BuypointActivity.class);
+        HomeActivity.this.startActivity(Movepoint);
     }
 }

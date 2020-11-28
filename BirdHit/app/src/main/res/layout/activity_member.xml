@@ -4,49 +4,135 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MemberActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/user_major"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/user_major"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="학과: 정보통신공학과"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="이름: 홍길동"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/user_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Point: 10000KPI"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:stretchColumns="*"
+            >
+
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="학과: 정보통신공학과"
-                android:textColor="@color/colorBlack"/>
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="이름: 홍길동"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/user_name"
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="이름: 홍길동"
-                android:textColor="@color/colorBlack"/>
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="학과: 정보통신공학과"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/user_point"
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Point: 10000KPI"
-                android:textColor="@color/colorBlack"/>
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="학번: 2020110101"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
 
-        </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="이메일: email@naver.com"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="사용 가능 KPI: 10000"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="총 사용 KPI: 25000"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/testimage"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
     </LinearLayout>
-
-
 
 </RelativeLayout>

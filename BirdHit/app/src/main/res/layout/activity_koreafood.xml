@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".KoreafoodActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -128,23 +129,21 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/koreafood_bibimbab"
                 android:layout_width="175dp"
                 android:layout_height="175dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/bibimbab"
-                android:background="#ffffff"/>
+                android:background="@drawable/testbibimbab"/>
 
-            <ImageButton
+            <Button
                 android:id="@+id/koreafood_kimchistew"
                 android:layout_width="175dp"
                 android:layout_height="175dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/kimchistew"
-                android:background="#ffffff"/>
+                android:background="@drawable/testkimchistew"/>
 
         </LinearLayout>
 
@@ -176,10 +175,103 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorBlack"
+                android:layout_centerInParent = "true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="결제목록"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_payment"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:choiceMode="singleChoice"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="결제금액:"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="bottom"/>
+
+                <TextView
+                    android:id="@+id/txt_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="bottom"
+                    android:text=""
+                    android:textSize="30dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|right"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/btn_buy"
+                    android:text="결제하기"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
-
-
 
 </RelativeLayout>
