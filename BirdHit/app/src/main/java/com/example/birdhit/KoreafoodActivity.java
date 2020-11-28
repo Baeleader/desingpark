@@ -4,13 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 public class KoreafoodActivity extends AppCompatActivity {
+
+    TextView tv_koreatext;
+    TextView txt_payment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,21 +27,16 @@ public class KoreafoodActivity extends AppCompatActivity {
 
         setTitle("koreafood");
 
-        // 빈 데이터 리스트 생성
-        final ArrayList<String> items = new ArrayList<String>();
-
-        // ArrayAdapter 생성, 아이템 View를 선택(Single choic)가능하도록 만듦.
-        final ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_single_choice, items);
-
-        // Listview 생성 및 adapter 지정.
-        final ListView listview = (ListView) findViewById(R.id.list_payment);
-        listview.setAdapter(adapter);
-
 
         findViewById(R.id.btn_fastfood).setOnClickListener(onClickListener);
         findViewById(R.id.btn_westernfood).setOnClickListener(onClickListener);
         findViewById(R.id.koreafood_bibimbab).setOnClickListener(onClickListener);
         findViewById(R.id.koreafood_kimchistew).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_payment).setOnClickListener(onClickListener);
+
+        tv_koreatext = findViewById(R.id.tv_koreatext);
+        txt_payment = findViewById(R.id.txt_payment);
+
 
 
 
@@ -52,9 +56,14 @@ public class KoreafoodActivity extends AppCompatActivity {
                     break;
 
                 case R.id.koreafood_bibimbab: // 버튼 클릭시 장바구니 아이템 담기
+                    Getbibimbab();
                     break;
 
                 case R.id.koreafood_kimchistew:
+                    Getkimchistew();
+                    break;
+                case R.id.btn_payment:
+                    Movepayment();
                     break;
             }
 
@@ -71,7 +80,20 @@ public class KoreafoodActivity extends AppCompatActivity {
         KoreafoodActivity.this.startActivity(westernfood);
     }
     private void Getbibimbab(){
-
+        tv_koreatext.setText("비빔밥                                       1");
+        txt_payment.setText("3500KPI");
     }
-
+    private void Getkimchistew(){
+        tv_koreatext.setText("김치찌개                                   1");
+        txt_payment.setText("4000KPI");
+    }
+    private void Movepayment(){
+        startToast("결제가 완료되었습니다.");
+        Intent mainhome = new Intent(KoreafoodActivity.this, HomeActivity.class);
+        mainhome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        KoreafoodActivity.this.startActivity(mainhome);
+    }
+    private void startToast(String msg){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
 }

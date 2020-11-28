@@ -197,7 +197,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="결제목록"
+                android:text="결제목록                                              수량"
                 android:textColor="@color/colorBlack"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -209,9 +209,16 @@
             android:layout_height="240dp"
             android:orientation="vertical">
 
-            <ListView
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_westerntext"
                 android:layout_width="match_parent"
-                android:layout_height="240dp" />
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/colorBlack"
+                />
+
 
 
         </LinearLayout>
@@ -242,7 +249,6 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="5dp"
                     android:gravity="bottom"
-                    android:text=""
                     android:textSize="30dp"
                     android:textColor="@color/colorBlack"/>
 
@@ -260,10 +266,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:background="@drawable/btn_buy"
+                    android:background="@drawable/btn_primary"
                     android:text="결제하기"
                     android:textSize="20dp"
-                    android:textColor="@color/colorBlack"/>
+                    android:textColor="@color/colorWhite"/>
 
             </LinearLayout>
 
